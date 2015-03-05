@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.izv.izv_actividades.VistaDetalle">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvDetalleDescripcion"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/backcompl"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Inicio:"
+                android:id="@+id/tvInicioDet"
+                android:layout_below="@+id/tvDetalleDescripcion"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvLugarDetS"
+                android:layout_below="@+id/tvDetalleDescripcion"
+                android:layout_toRightOf="@+id/tvInicioDet"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Fin:"
+                android:id="@+id/tvFinDet"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvInicioDet"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvLugarDetL"
+                android:layout_below="@+id/tvLugarDetS"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_alignRight="@+id/tvLugarDetS"
+                android:layout_alignEnd="@+id/tvLugarDetS"
+                android:layout_toRightOf="@+id/tvInicioDet"
+                android:layout_toEndOf="@+id/tvInicioDet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvFechaSalidaDetalle"
+                android:layout_below="@+id/tvLugarDetL"
+                android:layout_toRightOf="@+id/tvLabelInicioDet"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/tvHoraLlegadaDet"
+                android:layout_toStartOf="@+id/tvHoraLlegadaDet"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Inicio:"
+                android:id="@+id/tvLabelInicioDet"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvLugarDetL"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvHoraSalidaDet"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvLugarDetL"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Fin:"
+                android:id="@+id/tvLabelFinDet"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="italic"
+                android:layout_below="@+id/tvLabelInicioDet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvFechaLlegadaDet"
+                android:layout_toRightOf="@+id/tvLabelInicioDet"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvLabelInicioDet"
+                android:layout_toLeftOf="@+id/tvHoraLlegadaDet"
+                android:layout_toStartOf="@+id/tvHoraLlegadaDet"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvHoraLlegadaDet"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvHoraLlegadaDet"
+                android:layout_alignTop="@+id/tvFechaLlegadaDet"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvProfesorDet"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:layout_below="@+id/tvLabelFinDet"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvGrupoDet"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:layout_below="@+id/tvProfesorDet"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

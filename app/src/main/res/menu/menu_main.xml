@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Main"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_agregar"
+        android:title="@string/action_agregar"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/add" />
+</menu>

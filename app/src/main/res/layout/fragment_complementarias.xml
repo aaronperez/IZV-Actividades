@@ -1,0 +1,201 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.izv.izv_actividades.Complementarias">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etCompleDescripcion"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:editable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:hint="Describa la actividad"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:id="@+id/labelSalida"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignBottom="@+id/ibCompleFechaS"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignTop="@+id/ibCompleFechaS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="15/12/2014"
+                android:id="@+id/tvCompleFechaL"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/labelSalida"
+                android:layout_alignBottom="@+id/ibCompleFechaS"
+                android:layout_alignRight="@+id/tvCompleHoraS"
+                android:layout_alignEnd="@+id/tvCompleHoraS"
+                android:layout_alignTop="@+id/ibCompleFechaS"
+                android:gravity="center"
+                android:layout_alignBaseline="@+id/labelSalida" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibCompleFechaS"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/calendario"
+                android:layout_below="@+id/etCompleDescripcion"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCompleLugarL"
+                android:layout_below="@+id/ibCompleFechaS"
+                android:hint="Lugar de salida..."
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="De:"
+                android:id="@+id/labelDe"
+                android:textColor="#ff000000"
+                android:gravity="center_vertical|center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/ibCompleHoraS"
+                android:layout_alignTop="@+id/tvCompleHoraS"
+                android:layout_alignBaseline="@+id/tvCompleHoraS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="08:15"
+                android:id="@+id/tvCompleHoraS"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff000000"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/ibCompleHoraS"
+                android:layout_alignBottom="@+id/ibCompleHoraS"
+                android:layout_alignTop="@+id/ibCompleHoraS"
+                android:layout_toRightOf="@+id/labelDe" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibCompleHoraS"
+                android:src="@drawable/reloj"
+                android:layout_gravity="right|top"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/etCompleLugarL"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="a:"
+                android:id="@+id/labelA"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignBottom="@+id/ibCompleHoraL"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/ibCompleHoraL" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="08:15"
+                android:id="@+id/tvCompleHoraL"
+                android:gravity="center"
+                android:textColor="#ff000000"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/ibCompleHoraL"
+                android:layout_alignBottom="@+id/ibCompleHoraL"
+                android:layout_alignLeft="@+id/tvCompleHoraS"
+                android:layout_alignRight="@+id/tvCompleHoraS"
+                android:layout_alignTop="@+id/ibCompleHoraL"
+                android:layout_alignBaseline="@+id/labelA" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibCompleHoraL"
+                android:src="@drawable/reloj"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ibCompleHoraS" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCompleProfesores"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/ibCompleHoraL"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCompleGrupo"
+                android:layout_below="@+id/spinnerCompleProfesores"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aceptar"
+                android:id="@+id/bCompleAceptar"
+                android:layout_below="@+id/spinnerCompleGrupo"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:background="#ff0084dd" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

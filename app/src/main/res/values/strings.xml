@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IZV-Actividades</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Menús -->
+    <string name="action_agregar">Agregar actividad</string>
+    <string name="action_sincro">Sinconizar</string>
+    <string name="eliminarA">Eliminar actividad</string>
+    <string name="editarA">Editar actividad</string>
+    <string name="title_activity_actividad_detalle">Detalle</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="mensajeCancelar">No se ha producido ningún cambio</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+
+</resources>

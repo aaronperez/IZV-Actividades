@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Profesores">
+        <item>Seleccione el profesor encargado</item>
+        <item>Pilar</item>
+        <item>Carmelo</item>
+        <item>Modesto</item>
+        <item>Jaime</item>
+        <item>Mercedes</item>
+    </string-array>
+</resources>

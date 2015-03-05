@@ -1,0 +1,220 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.izv.izv_actividades.Extraescolares">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etExtraDescripcion"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:editable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:hint="Describa la actividad"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Salida:"
+                android:id="@+id/labelSalida"
+                android:gravity="center_vertical|center"
+                android:padding="3dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etExtraDescripcion"
+                android:layout_alignBottom="@+id/ibExtraFechaS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="15/12/2014"
+                android:id="@+id/tvExtraFechaS"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/labelSalida"
+                android:layout_toLeftOf="@+id/ibExtraFechaS"
+                android:layout_toStartOf="@+id/ibExtraFechaS"
+                android:layout_alignTop="@+id/labelSalida"
+                android:layout_above="@+id/ibExtraHoraS"
+                android:layout_alignBaseline="@+id/labelSalida" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibExtraFechaS"
+                android:src="@drawable/calendario"
+                android:layout_alignParentRight="true"
+                android:paddingTop="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etExtraDescripcion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="08:15"
+                android:id="@+id/tvExtraHoraS"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:padding="3dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_alignLeft="@+id/tvExtraFechaS"
+                android:layout_alignRight="@+id/tvExtraFechaS"
+                android:layout_below="@+id/tvExtraFechaS"
+                android:layout_alignTop="@+id/ibExtraHoraS"
+                android:layout_alignBottom="@+id/ibExtraHoraS" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibExtraHoraS"
+                android:src="@drawable/reloj"
+                android:layout_below="@+id/ibExtraFechaS"
+                android:layout_alignLeft="@+id/ibExtraFechaS"
+                android:layout_alignRight="@+id/ibExtraFechaS"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etExtraLugarS"
+                android:hint="Lugar de salida..."
+                android:layout_marginTop="3dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/tvExtraHoraS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Llegada:"
+                android:id="@+id/labelLlegada"
+                android:textColor="#ff000000"
+                android:gravity="center_vertical|center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/etExtraLugarS"
+                android:layout_alignBottom="@+id/tvExtraFechaL"
+                android:layout_marginTop="10dp"
+                android:layout_alignBaseline="@+id/tvExtraFechaL" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="15/12/2014"
+                android:id="@+id/tvExtraFechaL"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/labelLlegada"
+                android:layout_alignBottom="@+id/ibExtraFechaL"
+                android:layout_alignRight="@+id/tvExtraHoraS"
+                android:layout_alignEnd="@+id/tvExtraHoraS"
+                android:layout_alignTop="@+id/ibExtraFechaL" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibExtraFechaL"
+                android:src="@drawable/calendario"
+                android:layout_below="@+id/etExtraLugarS"
+                android:layout_alignLeft="@+id/ibExtraHoraS"
+                android:layout_alignRight="@+id/ibExtraHoraS"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:15"
+                android:id="@+id/tvExtraHoraL"
+                android:padding="3dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_alignLeft="@+id/tvExtraFechaL"
+                android:layout_alignRight="@+id/tvExtraFechaL"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignBottom="@+id/ibExtraHoraL"
+                android:layout_alignTop="@+id/ibExtraHoraL"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ibExtraHoraL"
+                android:src="@drawable/reloj"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:layout_below="@+id/ibExtraFechaL"
+                android:layout_alignLeft="@+id/ibExtraFechaL"
+                android:layout_alignRight="@+id/ibExtraFechaL" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etExtraLugarL"
+                android:hint="Lugar de salida..."
+                android:layout_marginTop="3dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/ibExtraHoraL"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerExtraProfesores"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/etExtraLugarL" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerExtraGrupo"
+                android:layout_below="@+id/spinnerExtraProfesores" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aceptar"
+                android:id="@+id/bExtraAceptar"
+                android:layout_below="@+id/spinnerExtraGrupo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:background="#FF0084DD" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
